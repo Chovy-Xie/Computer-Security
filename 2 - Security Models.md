@@ -70,3 +70,39 @@ Disadvantages
 
  - Use ACLs when managing permissions per object (e.g., file system security)
  - Use an Access Control Matrix when auditing system-wide access (e.g., centralized user management)
+
+
+## Security Policy and Models
+
+### Security Policy 
+> defines "what" must be protected and enforced
+
+Key Characteristics 
+ - Defines security goals (e.g., prevent unauthorized access, detect threats)
+ - Establishes rules for access control, encryption, authentication, and auditing
+ - Helps enforce legal and regulatory compliance (e.g., GDPR, HIPAA, ISO 27001)
+
+### Security Models 
+> provides the "how" by implementing these rules in a structured way
+
+Key Characteristics
+ - Provides formal rules and structures for implementing a security policy
+ - Helps in system design, evaluation, and verification
+ - Defines how data access, integrity, and confidentiality are controlled
+
+### Mandatory Access Control (MAC) - 强制访问控制
+> a centrally controlled access model where only the system administrator or security policy defines access permissions
+
+Key Characteristics
+ - Enforces confidentiality using classification levels (e.g., Top-Secret, Secret, Confidential, Unclassified)
+ - Uses security labels (both subjects and objects are assigned sensitivity levels)
+ - Users cannot change permissions—only system administrators control access
+ - Prevents data leakage through strict enforcement
+
+### Discretionary Access Control (DAC) - 自主访问控制
+> a flexible access model where owners of objects can set permissions at their discretion
+
+Key Characteristics
+ - Users own files and can grant or revoke permissions 
+ - Uses Access Control Lists (ACLs) to define who can access what
+ - More user-friendly but less secure than MAC 
