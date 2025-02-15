@@ -21,10 +21,10 @@ Key Takeaways
 
 ## Attacker Information/Access
 
- - Ciphertext Only 
+ - Ciphertext Only (密文)
 	- The attacker has access only to the ciphertext, the encrypted message. 
 	They do not have access to the plaintext (original message) or the encryption key.
- - Known Plaintext
+ - Known Plaintext (明文)
 	- The attacker has access to both the plaintext and the corresponding ciphertext.
 	This allows them to examine how the plaintext is transformed into the ciphertext 
 	and attempt to deduce the key or the encryption algorithm.
@@ -67,3 +67,25 @@ Time Complexity on Passwords
 
 
 ## Number Sizes
+
+### Some Important Powers of Two
+ - 2^10 ~ a thousand
+ - 2^20 ~ a million
+ - 2^30 ~ a billion
+ - 2^40 ~ a trillion
+
+### Seconds
+ - 2^12 ~ an hour
+ - 2^16 ~ a day
+ - 2^25 ~ a year
+
+### Keysizes & Sample Question
+Q: "Given a baseline of 1 billion tests/second, how big does the keyspace need to be for brute force to be impractical?"
+
+```
+8 yrs = 2^3 * 2^25 = 2^28 sec
+1 billion keys every second -> 2^30 * 2^28 = 2^58 keys tested in 8 years
+
+For "on average", keyspace needs to be twice this: |k| >= 2^59
+So: { Need to use keys with at least 59 bits }
+```
