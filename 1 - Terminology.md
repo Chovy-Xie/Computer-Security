@@ -12,7 +12,7 @@ that could be exploited by an attacker to gain unauthorized access or cause dama
  - Hardware Vulnerabilities (e.g., firmware exploits, insecure loT devices)
  - Human Vulnerabilities (e.g., weak passwords, phishing susceptibility)
 
-### Threat 
+### Threat
 > A <b>threat</b> is any potential danger that could exploit a vulnerability and 
 cause harm to a system, data, or organization.
 
@@ -32,7 +32,7 @@ cause harm to a system, data, or organization.
 > The skills, tools, and resources required to perform an attack.
 
  - Knowledge of hacking techniques
- - Malware, puhishing kits, exploit tools
+ - Malware(恶意软件), puhishing kits, exploit tools
  - Computing power for brute-force attacks
 
 ### Opportunity
@@ -48,6 +48,7 @@ cause harm to a system, data, or organization.
  - Finance gain
  - Espionage 
  - Hacktivism
+ - Intellectual challenge (some people see it as a game)
  - Revenge or personal vendettas
 
 ### Cybersecurity Implication
@@ -60,26 +61,46 @@ To prevent attacks, organizations must:
 No MOM = No Attack  -> If any of these three elements is missing, an attack is unlikely to occur.
 
 
+## Model and Defense
+
+### Model
+> A concrete (usually abstracted) view of a system. 
+
+To be useful, models must: 
+ - Accurately reflect key features of real system
+ - Be simple enough to understand and reason
+
+### Defense (or control)
+> A mechanism (tool, technology, or policy) put in place to reduce risk 
+
+ - Remove a risk (remove or block a vulnerability)
+ - Manage/mitigate risk (管控/缓解)
+ - Transfer a risk (insurance, etc.)
+
+
 ## Computer Security - Goals
 > The Big Three Goals of CS: CIA Triad
 
 ### Confidentiality(机密性)
-> Avoiding unauthorized disclosure of information.
+> Avoiding unauthorized(未经授权) disclosure of information.
 
  - Ensures that only authorized individuals can access sensitive information.
  - Prevents unauthorized disclosure of data.
+ - 保密. 避免未经授权<b>披露</b>信息
 
 ### Integrity(完整性)
 > Avoiding unauthorized modification of information.
 
  - Ensures that data remains accurate, complete, and unaltered by unauthorized users.
  - Protects against modification, corruption, or destruction of data.
+ - 完整. 避免未经授权<b>修改</b>信息
 
 ### Availability(可用性)
 > Ensuring information or systems are available in a timely fashion to those authorized to access them.
 
  - Ensures that systems, networks, and data are accessible when needed.
  - Prevents disruptions caused by attacks, hardware failures, or software issues.
+ - 可用. 确保信息或系统可及时提供给有权访问者
 
 <ins>Caution:</ins> Availability is often misunderstood by students! 
 Violations of availability are when an attacker makes systems/data unavailable to legitimate users. 
@@ -90,3 +111,10 @@ Not when an attacker gains availability to data they shouldn’t see (that’s a
  - If <b>Confidentiality</b> is compromised -> Sensitive data is leaked.
  - If <b>Integrity</b> is compromised -> Data is tampered with or manipulated.
  - If <b>Availability</b> is compromised -> Users cannot access critical systems.
+
+### Other goals that can be important in some situations
+
+ - Non-repudiation(不可抵赖): Principals/subjects(委托人/主体) cannot deny actions later. 
+ - Authentication(认证): Principals are who they claim to be.
+ - Assurance(保证): How trust is provided or managed. 
+ - Accountability(责任): or Accounting or Audit (会计或审计), Principals are responsible for actions. 

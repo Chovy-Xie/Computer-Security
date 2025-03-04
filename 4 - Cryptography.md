@@ -1,8 +1,9 @@
 # Cryptography(密码学)
+> Fundamental Protections
 
 ## Basics of Encryption
 
-Encryption Function (Encryption Key) -> Network Interface -> Decryption Function (Decryption Key)
+Encryption Function (Encryption Key) -> Network Interface -> Ciphertext -> Network Interface -> Decryption Function (Decryption Key)
 
  - Plaintext: The message the sender wants to send.
  - Ciphertext: The data that is transmitted.

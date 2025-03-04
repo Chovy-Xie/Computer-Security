@@ -18,6 +18,27 @@ Key Takeaways
  - Poor randomness leads to vulnerabilities in encryption, authentication, and gaming systems.
  - Unpredictability + Uniqueness = Stronger Cryptographic Security
 
+### Probability Theory 
+
+A probability space is (slightly simplified definition):
+ - A set of outcomes of an experiment (the sample space S). 
+ - A probability distribution maps outcomes to probabilities (P: S->[0.1])
+
+A fair coin toss: 
+ - S = {H, T}
+ - For all x: P(x) = 1/2
+
+n (independent) random bits (n-bit key)
+ - S = {00..00, 00..01, 00..10, ..., 11..10, 11..11}
+ - For all x ∊ S: P(x) = 1/2^n
+
+Win/Loss outcomes in a 2-of-3 contest, win favored 3/4
+ - S = {WW, LWW, WLW, ..., LWL, LL}
+ - P(WW)=9/16, P(LWW)=9/64, P(WLL)=3/64, P(LL)=1/16
+
+Independent event: Good intuitive concept - formally, two events A and B are independent iff
+	P(A ∩ B) = P(A) ∙ P(B)
+
 
 ## Attacker Information/Access
 
